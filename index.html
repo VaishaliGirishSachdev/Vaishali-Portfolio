@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vaishali | AI Enthusiast</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    header img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #00ffff;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+      transition: transform 0.3s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.5rem;
+      color: #00ffff;
+      margin: 1rem 0 0.5rem;
+    }
+
+    p.bio {
+      color: #ccc;
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0.5rem auto;
+      line-height: 1.6;
+      animation: fadeIn 2s ease;
+    }
+
+    .projects, .contact {
+      padding: 2rem;
+      text-align: center;
+      animation: slideUp 1.2s ease;
+    }
+
+    .project-card {
+      background: #1f1f1f;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 1.5rem auto;
+      max-width: 600px;
+      box-shadow: 0 0 12px rgba(0, 255, 255, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 18px rgba(0, 255, 255, 0.3);
+    }
+
+    .project-card h3 {
+      font-size: 1.5rem;
+      color: #00ffff;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card a {
+      color: #00ffff;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin: 0.5rem;
+      transition: color 0.3s;
+    }
+
+    .project-card a:hover {
+      color: #ffffff;
+    }
+
+    .contact h2 {
+      color: #00ffff;
+    }
+
+    .contact p a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #888;
+      border-top: 1px solid #222;
+      margin-top: 2rem;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header img {
+        width: 140px;
+        height: 140px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      .project-card {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="cropped_profile_photo.jpg" alt="Vaishali's Profile Photo" />
+    <h1>Vaishali Sachdev</h1>
+    <p class="bio">Aspiring AI Engineer focused on building intelligent systems. Passionate about Python and real-world ML projects. Recently created a Mood-Based Music Recommender using NLP & emotion analysis.</p>
+  </header>
+
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Mood Music Recommender 🎵</h3>
+      <p>Detects emotions from user input and recommends mood-based songs.</p>
+      <a href="https://github.com/VaishaliGirishSachdev/mood-music-recommender" target="_blank">View Code</a>
+      <a href="https://mood-music-recommender-jvcrurhd4vz5apppprwitanp.streamlit.app/" target="_blank">Live Demo</a>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:sachdevvaishu@gmail.com">sachdevvaishu@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/vaishalisachdev1" target="_blank">linkedin.com/in/vaishalisachdev1</a></p>
+    <p>Github: <a href="https://github.com/VaishaliGirishSachdev">github.com/VaishaliGirishSachdev</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Vaishali Sachdev
+  </footer>
+
+</body>
+</html>
